@@ -3,8 +3,9 @@
 
 
 name = input("Please enter your name: ")
-age = input("What is your age %s: " % name)
-when100 = (100 - int(age)) + 2020
+age = int(input("What is your age %s: " % name))
+when100 = (100 - age) + 2020
+num = int(input("Please enter a number: "))
 
 
-print("%s, you will be 100 years old in %d" % (name, when100))
+print("%s, you will be 100 years old in %d\n" % (name, when100) * num)
