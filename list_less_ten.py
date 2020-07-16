@@ -3,7 +3,7 @@
 
 
 a_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-num = 10
+num = int(input('Please enter number to check less than: '))
 
 for a in a_list:
     if a < num:
