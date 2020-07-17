@@ -21,10 +21,10 @@ def play_game(p1, p2):
             return 'Scissors wins'
 
 
-quit = ''
+end_game = ''
 choices = ['r', 'p', 's']
 
-while quit != 'quit':
+while end_game != 'quit':
     player1 = input('Player 1, Please press a key (r = rock, p = paper, s = scissors): ')
     if player1 not in choices:
         player1 = input('**CHOICE INVALID** Please press a key (r = rock, p = paper, s = scissors): ')
@@ -34,4 +34,4 @@ while quit != 'quit':
         player2 = input('**CHOICE INVALID** Please press a key (r = rock, p = paper, s = scissors): ')
 
     print(play_game(player1, player2))
-    quit = input('Type quit to end, or enter to continue: ')
+    end_game = input('Type quit to end, or enter to continue: ')
