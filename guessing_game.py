@@ -18,5 +18,6 @@ def play_game(guess):
             print("You have figured out the secret number!")
 
 
-user_guess = int(input("Guess the secret number 1 - 9: "))
-play_game(user_guess)
+if __name__ == "__main__":
+    user_guess = int(input("Guess the secret number 1 - 9: "))
+    play_game(user_guess)
